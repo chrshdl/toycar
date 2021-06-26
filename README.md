@@ -36,13 +36,13 @@ rostopic echo gps
 
 gps output
 ```
-time: ''
+time: 214516
 latitude: 52.3626289368
 longitude: 12.7428302765
 fix: 1
 satellites: 9
 ---
-time: ''
+time: 214517
 latitude: 52.3626327515
 longitude: 12.7428302765
 fix: 1
