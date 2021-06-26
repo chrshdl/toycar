@@ -28,10 +28,27 @@ echo "export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
 # build
 The src folder of the root directory is a catkin workspace. To build the project do
 ```
-~/toycar$ catkin_make
+(toycar) cwasilei@nano:~/projects/toycar$ catkin_make
 ```
-# Run
+# run
 ```
-~/toycar$ . ./devel/setup.bash 
-~/toycar/src$ roslaunch sensors launch_sensors.launch
+(toycar) cwasilei@nano:~/projects/toycar$ . ./devel/setup.bash 
+(toycar) cwasilei@nano:~/projects/toycar/src$ roslaunch sensors launch_sensors.launch
+```
+
+in a second terminal
+```
+(toycar) cwasilei@nano:~/projects/toycar$ rostopic echo gps
+time: ''
+latitude: 52.3626289368
+longitude: 12.7428302765
+fix: 1
+satellites: 9
+---
+time: ''
+latitude: 52.3626327515
+longitude: 12.7428302765
+fix: 1
+satellites: 9
+---
 ```
